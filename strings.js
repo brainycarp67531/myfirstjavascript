@@ -55,3 +55,4 @@ console.log(eval(s2.valueOf()));  // returns the number 4
 
 // next chapter is: String coersion
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_coercion
+
