@@ -33,3 +33,25 @@ function areEqualCaseInsensitive(str1, str2) {
 // Next chapter is: String primitives and String Object
 https://www.theodinproject.com/lessons/foundations-data-types-and-conditionals#strings
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_primitives_and_string_objects
+
+const strPrim = "foo"; 
+const strPrim2 = String(1);
+const strPrim3 = String(true);
+const strObj = new String(strPrim);
+
+console.log(typeof strPrim);
+console.log(typeof strPrim2);
+console.log(typeof strPrim3);
+console.log(typeof strObj);
+
+// Convert a string object into a string primitive
+const s1 = "2 + 2";
+const s2 = new String("2 + 2");
+console.log(eval(s1));
+console.log(eval(s2));
+
+console.log(eval(s2.valueOf()));  // returns the number 4
+
+
+// next chapter is: String coersion
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_coercion
