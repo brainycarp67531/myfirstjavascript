@@ -1,0 +1,16 @@
+Foundations data types and conditionals 
+
+https://www.theodinproject.com/lessons/foundations-data-types-and-conditionals
+
+Strings
+1. done
+2. done
+3. done
+
+Conditionals
+1. done
+2. done
+3. done
+4. done
+5. done 
+6. 

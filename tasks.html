@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tasks</title>
+</head>
+<body>
+
+  <script>
+    if ("0") {
+        alert( 'Hello' );
+    }
+
+    let value = prompt('What is the "official" name of JavaScript?', '');
+
+    // The name of JavaScript?
+    if (value == 'ECMAScript') {
+        alert('Right!');
+    } else {
+        alert("You don't know? ECMAScript!");
+    }
+
+    // Show the sign
+    let number = prompt('Enter a number: ');
+
+    if (number > 0) {
+        alert("Greater then zero!");
+    } else if (number < 0) {
+        alert("Less then zero!");
+    } else {
+        alert("Equals zero!");
+    }
+
+    // Rewrite 'if' into '?'
+    let result = (a + b < 4) ? 'Below' : 'Over';
+
+    // Rewrite 'if..else' into '?'
+    let message = (login == 'Employee') ? 'Hello':
+        (login == 'Director') ? 'Greetings':
+        (login == '') ? ' No login':
+        '';
+
+</script>
+
+</body>
+</html>
