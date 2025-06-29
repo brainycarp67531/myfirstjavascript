@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+      // create three variables that hold reference to the list, input and button. 
+      const list = document.querySelector("ul");
+      const input = document.querySelector("input");
+      const button = document.querySelector("button");
+
+
+       
+      // create a function that will run in response when the button is clicked. 
+      function getValue() {
+        // Store the input value in a variable named inputValue. 
+        const inputValue = input.value;
+        
+        // Test the make sure it is working. 
+        // alert("input value is: " + inputValue);
+
+        // Empty the input element by setting the value to an empty string. 
+        input.value = '';
+
+        // Create a new <li>, <span> and <button> element
+        const listElement = document.createElement("li");
+        const spanElement = document.createElement("span");
+        const buttonElement = document.createElement("button");
+
+        // append the span and button element to the list element. 
+        listElement.appendChild(spanElement);
+        listElement.appendChild(buttonElement);
+
+        // set the spanElement text to the value of the input. 
+        spanElement.textContent = inputValue;
+
+        // set the button element text to delete. 
+        buttonElement.textContent = "Delete";
+
+        // append the list element as a child to the list. 
+        list.appendChild(listElement);
+
+        // event handler for the delete button
+        buttonElement.addEventListener('click', () => {
+          list.removeChild(listElement);
+        });
+
+        // make sure the the inout field is in focus. 
+        input.focus();
+
+      }
+
+      // add a click event listener
+      button.addEventListener("click", getValue);
+
+
+</script>
+  </body>
+</html>
