@@ -4,7 +4,7 @@ function multiplyNumeric(object) {
         // check if the object is a number 
         if (typeof(object[key]) === "number") {
             // if it is a number the multiply by two 
-            menu[key] = menu[key] * 2;
+            object[key] = object[key] * 2;
         };
     }
 }
